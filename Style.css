@@ -1,0 +1,130 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#020617;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#10b981;
+    border-radius:20px;
+}
+
+/* Hero */
+section{
+    position:relative;
+}
+
+section::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#10b981;
+    opacity:.08;
+    filter:blur(120px);
+    top:-120px;
+    right:-120px;
+    border-radius:50%;
+}
+
+section::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#2563eb;
+    opacity:.06;
+    filter:blur(120px);
+    bottom:-100px;
+    left:-100px;
+    border-radius:50%;
+}
+
+/* Logo */
+header img{
+    transition:.4s;
+}
+
+header img:hover{
+    transform:rotate(8deg) scale(1.08);
+}
+
+/* Buttons */
+a{
+    transition:.3s ease;
+}
+
+.bg-emerald-500:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(16,185,129,.35);
+}
+
+/* Profile Image */
+img[alt="Malik Adeoye"]{
+    transition:.4s ease;
+}
+
+img[alt="Malik Adeoye"]:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 60px rgba(16,185,129,.25);
+}
+
+/* Headings */
+h1{
+    letter-spacing:-2px;
+}
+
+/* Paragraph */
+p{
+    line-height:1.8;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+h1{
+font-size:2.8rem!important;
+text-align:center;
+}
+
+p{
+text-align:center;
+}
+
+section .grid{
+text-align:center;
+}
+
+section img{
+margin-top:40px;
+width:300px!important;
+}
+
+section .flex{
+justify-content:center;
+}
+
+header .hidden{
+display:none;
+}
+
+}
